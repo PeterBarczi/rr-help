@@ -2,3 +2,8 @@
 
 echo "Test 1"
 touch /var/tmp/test
+
+
+# 
+apt -y install httpd
+echo "test" > /var/www/html/index.html
