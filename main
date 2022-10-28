@@ -7,3 +7,14 @@ touch /var/tmp/test
 # 
 apt -y install httpd
 echo "test" > /var/www/html/index.html
+
+#!/usr/bin/env bash
+
+echo "Test 1"
+touch /var/tmp/test
+
+
+# SSH config
+tee /tmp/test2 <<EOF
+test
+EOF
