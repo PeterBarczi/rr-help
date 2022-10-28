@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
 echo "Test 1"
+touch /var/tmp/test
