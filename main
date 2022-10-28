@@ -1,15 +1,13 @@
 #!/usr/bin/env bash
 
-echo "Test 1"
-touch /var/tmp/test
-
-
 # Install httpd
-apt -y install httpd
+echo "Installing nginx..."
+apt -y install nginx
 echo "test" > /var/www/html/index.html
 
 
 # SSHD config
-tee /tmp/test2 <<EOF
+echo "Configuring SSHD..."
+tee /tmp/rrconf <<EOF
 test
 EOF
