@@ -1,4 +1,14 @@
-#!/usr/bin/env bash
+#!/bin/bash
+test -z $(type -p) || { echo bash required; exit 1; }
+set -e
+set -u
+source ${RRCONFINC}
+
+test "${RRUID}" -eq 0 || {
+        echo "No root account."
+        exit 1
+} 
+
 
 # Install httpd
 echo "Installing nginx..."
