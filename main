@@ -9,7 +9,9 @@ test "${RRUID}" -eq 0 || {
         exit 1
 } 
 
-require cronjob --help
+# Dependencies
+require cronjob
+require users
 
 # Install httpd
 echo "Installing nginx..."
