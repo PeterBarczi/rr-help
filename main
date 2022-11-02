@@ -13,6 +13,6 @@ test "${RRUID}" -eq 0 || {
 } 
 
 # Dependencies
-require cronjob
+#require cronjob
 require users
 require sshd
